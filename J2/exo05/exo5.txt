@@ -1,0 +1,27 @@
+# Florian Leparoux
+# Exo05 : Objectif : Récupération d'argument par entrée clavier et bouclage de script
+# Note : 1 sur 20
+# Difficulté : Facile
+# Nom du script par étudiant : nom.prenom.exo03.sh
+
+# Condition / boucle
+if [ statement ]; then
+	commande
+fi
+
+while [ statement ]; do
+	commande
+done
+
+
+# Objectif
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Demander le renseignement d'un repertoire à creer
+- Vérifier que le répertoire n'existe pas et créé le, sinon on termine le script en exit 1
+- Créer un fichier dans le répertoire
+- Changer les permissions en 777 uniquement si elle ne sont pas en 777
+- Afficher  les permissions étendu du fichier nouvellement créer
+- Recommencer le script pour créer un deuxieme repertoire (ou plus :) )
+- Terminer le script avec un code 0 

@@ -1,0 +1,39 @@
+# Florian Leparoux
+# Exo03 : Objectif : Récupération d'argument 
+# Note : 1 sur 20
+# Difficulté : Facile
+# Nom du script par étudiant : nom.prenom.exo03.sh
+
+
+# Listes des commandes utiles
+mkdir
+touch
+rm
+ls
+basename
+echo
+pwd
+cd
+cp
+
+if [ statement ]; then
+	commande
+fi
+
+Argument : $1 $@ $#
+
+# Info à savoir
+Le nom du script courant est stocké dans le premier argument bash, $0
+Tips : echo $(date)
+
+
+# Objectif
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Afficher une phrase contenant le nombre d'argument passé au script
+- Vérifier que vous avez 3 arguments (ni plus ni moins)
+- Si vous avez pas assez d'arguments terminer le script avec un code 1
+- Si vous avez assez d'arguments continuer le script
+- Créer les répertoires passer en arguments (3 maximum)
+- Terminer le script avec un code 0 

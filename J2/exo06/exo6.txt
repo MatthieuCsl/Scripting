@@ -1,0 +1,44 @@
+# Florian Leparoux
+# Exo06 : Objectif : Création du menu + Répétition
+# Note : 1 sur 20
+# Difficulté : Moyen
+# Nom du script par étudiant : nom.prenom.exo06.sh
+
+# Commande utile : 
+grep
+awk
+
+# Condition / boucle
+if [ statement ]; then
+	commande
+fi
+
+while [ statement ]; do
+	commande
+done
+
+case $array in 
+	0) commande
+		 ;;
+	1) commande
+		 ;;
+	*) default_command
+		 ;;
+esac
+
+# Objectif
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Afficher un choix entre :
+	- Créer un répertoire
+  - Lister le répertoire courant
+	- Supprimer un répertoire
+  - Afficher les permisssions du répertoires
+  - Changer les permissions du répertoires
+  - Afficher une aide
+  - Quitter
+
+- Les vérifications standards devront être effectués (existe ou pas)
+
+- Terminer le script avec un code 0 

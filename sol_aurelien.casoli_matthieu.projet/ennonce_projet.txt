@@ -1,0 +1,35 @@
+# Florian Leparoux - florian.leparoux@ynov.com
+# Projet fin de module 
+# 12/12/2017
+
+# Objectif du projet :
+Le projet portera sur la conception d'un script d'automatisation de récupération,
+archivage et sauvegarde de video youtube.
+
+
+# Consignes spécifiques
+- Heure limite du rendu du projet : 12/12/17 à 12h30
+- La conception du projet peut s'effectuer sous forme de binome (1 trinome si nombre impair)
+- Il sera rendu par email, sous la forme d'une archive compressée nommé : nom_binome1.nom_binome2.projet.XXX
+- L'email comportera le tag suivant en Objet : "[B2][SCRIPTING][PROJET] Nom binome 1, Nom binome 2"
+- Les scripts devront être obligatoirements taggué par une entête (Nom binome, au minimum)
+- Les scripts devront être indentés et commentés (Sans excès)
+
+# Point à respecter 
+- Un environnement de travail (workspace) pour l'execution des scripts. (Ex: ./tmp/)
+- La séparation des fonctions dans un ou plusieurs fichiers. (Ex: ./tmp/functions/get_some_content.sh
+- Un historique des téléchargements sera enregistré dans le dossiers log/success_dl.log du workspace.
+- Un historique des erreurs sera enregistré dans le dossiers log/errors_cmd.log
+- Le script acceptera deux entrées pour les url youtube (arguments (menu, ou cli), liste dans un fichier texte)
+- L'archivage se fera par dossiers dans le dossier archivage. (Alphanumérique de 1 caractère (A-Z 0-9))
+- La sauvegarde des vidéos se fera au format : jj-aa-mm_hh-mm-ss.tar.gz dans le dossier sauvegarde du workspace 
+- A la fin du process : Téléchargement -> Archivage -> Sauvegarde, un récapitulatif sera affiché avec les informations suivantes :
+	- ## Recapitulatif du workspace : ##
+	- ## XX videos telecharger ##
+	- ## YY archivages de video ##
+	- ## Espace disque utilise pour le projet : ZZ (Mo,Go) ##
+	- ## Espace dique utilise pour les videos : ZZ' (Mo,Go) ##
+	- ## Espace disque utilise pour la sauvegarde : ZZ" (Mo,Go) ##
+
+
+

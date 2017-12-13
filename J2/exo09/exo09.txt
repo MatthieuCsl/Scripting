@@ -1,0 +1,35 @@
+# Florian Leparoux
+# Exo09 : Objectif : Fonction d'aides
+# Note : 1 sur 20
+# Difficulté : Moyen
+# Nom du script par étudiant : nom.prenom.exo09.sh
+
+# Commande : 
+curl
+wget
+grep 
+wc 
+head
+tail
+clear
+sleep
+awk
+
+
+# Objectif
+
+Toutes les actions du script seront loggué dans fichier : suivi.exo09.sh
+Après chaque affichages on appliquera un pause de 5s et on réinitialisera le prompt (clear)
+
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Récuperer le fichier présent ici : https://t1loc.fr/passwd (via le script)
+- Stocker dans un tableau les utilisateurs non système (UID > 500)
+- Compter le nombre d'utilisateur commencant par : test, puis aurel, puis finissant par ore
+	- Afficher une phrase du type : Il y a temps de... 
+- Afficher une phrase pour chaque utilisateur système avec les informations suivante : 
+	- L'utilisateur : X, a pour uid : Y, a pour home : Z, et pour shell : Z'
+- Afficher la 17ème ligne du script 
+- Afficher l'avant dernière ligne du script
+- Terminer le script avec un code 0 

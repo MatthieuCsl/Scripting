@@ -1,0 +1,34 @@
+# Florian Leparoux
+# Exo10 : Objectif : Journalisation 
+# Note : 1 sur 20
+# Difficulté : Moyen
+# Nom du script par étudiant : nom.prenom.exo09.sh
+
+# Commande : 
+curl
+wget
+grep 
+wc 
+head
+tail
+clear
+sleep
+awk
+
+Redirection des sorties standard : echo "ok" 1> journalisation.log
+Redirection des  erreurs : blblab 2> erreurs.log
+
+# Objectif
+
+Toutes les actions du script seront loggué dans fichier : suivi.exo10.log
+
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Récuperer le fichier présent ici : https://t1loc.fr/passwd (via le script)
+- Stocker dans un tableau les utilisateurs non système (UID > 500)
+- Compter le nombre d'utilisateur commencant par : test, puis aurel, puis finissant par ore
+- Afficher une phrase pour chaque utilisateur standard avec les informations suivante : 
+	- L'utilisateur : X, a pour uid : Y, a pour home : Z, et pour shell : Z'
+- Afficher la 17ème ligne du script 
+- Terminer le script avec un code 0 

@@ -1,0 +1,41 @@
+# Florian Leparoux
+# Exo02 : Objectif : Vérification de la présence d'un répertoire/fichier
+# Note : 1 sur 20
+# Difficulté : Facile
+# Nom du script par étudiant : nom.prenom.exo02.sh
+
+
+# Listes des commandes utiles
+mkdir
+touch
+rm
+ls
+basename
+echo
+pwd
+cd
+cp
+tree
+
+if [ statement ]; then
+	commande
+fi
+
+# Info à savoir
+Le nom du script courant est stocké dans le premier argument bash, $0
+Tips : echo $(date)
+
+
+# Objectif
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Afficher un phrase contenant le chemin du répertoire courant
+- Créer 1 répertoires A uniquement si le répertoire n'existe pas
+- Dans le repertoire A créer 5 fichiers de {01 à 05} si le fichier n'existe pas
+- Copier les 5 fichiers dans le repertoire  B
+- Lister les répertoires récursif sans utiliser ls
+- Insérer un contenu : 'Ce fichier est le 01' dans le fichiers B/01
+- Afficher le contenu du fichier B/01
+- Ajouter une ligne supplémentaire au fichier B/01
+- Terminer le script avec un code 0 et une phrase

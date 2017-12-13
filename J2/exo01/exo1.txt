@@ -1,0 +1,38 @@
+# Florian Leparoux
+# Exo01 : Objectif : Création/Modification/Suppression de fichier
+# Note : 1 sur 20
+# Difficulté : Facile
+# Nom du script par étudiant : nom.prenom.exo01.sh
+
+
+# Listes des commandes utiles
+mkdir
+touch
+rm
+ls
+basename
+echo
+pwd
+cd
+cp
+
+# Info à savoir
+Le nom du script courant est stocké dans le premier argument bash, $0
+Tips : echo $(date)
+
+
+# Objectif
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Afficher un phrase contenant le chemin du répertoire courant
+- Créer 10 répertoires de [A-J]
+- Dans le repertoire A créer 5 fichiers de {01 à 05}
+- Copier les 5 fichiers dans les autres répertoires
+- Lister tous les répertoires de façon récursive
+- Insérer un contenu : 'Ce fichier est le 01' dans les fichiers 01
+- Supprimer les dosssiers voyelles de façon verbeuse
+
+# Chaque objectif devrait afficher une sortie à l'ecran indiquant le début et la fin de la tache.
+Exemple : ## Début de la création des répertoires ##
+				  ## Fin de la création des répertoires ##

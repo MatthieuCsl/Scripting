@@ -1,0 +1,40 @@
+# Florian Leparoux
+# Exo07 : Objectif : Gestion par variable et verrouillage de script
+# Note : 1 sur 20
+# Difficulté : Moyen
+# Nom du script par étudiant : nom.prenom.exo07.sh
+
+# Commande utile : 
+touch
+echo $$
+trap 
+flock
+
+# Condition / boucle
+if [ statement ]; then
+	commande
+fi
+
+
+# Objectif
+Créer un script bash qui va effectuer ces actions :
+- Créer un répertoire comportant le nom du script dans ./tmp/
+- Déplacer vous dans ce répertoire
+- Créer un mécanisme de verrouillage du script (impossible de le lancer 2 fois en même temps)
+- Passez 1 arguments au script qui correspondra au nombre d'utilisateur à créer
+- Récuperer les informations suivante via une saisie clavier :
+	- Nom
+	- Prénom
+	- Environnement : bash zsh ou sh (Valider que c'est une de ces trois options sinon bouclé la question)
+	- Question : Devons nous initialisé le mot de passe ? 
+- Stocker ces informations dans des variables
+- Créer un répertoire nommé : nom.prenom
+- En fonction de la réponse à la question d'initialisation
+	- Oui : On créer 2 fichiers : 
+		- Fichier d'info : Reprenant les informations de l'utilisateur
+		- Un fichier caché : Contenant un mot de passe
+  - Non on retourne un message d'erreur
+- On affiche le contenu du répertoire créer uniquement en arborescence
+- On déverrouille le processus de verrouillage
+
+- Terminer le script avec un code 0 
