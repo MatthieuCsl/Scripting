@@ -12,6 +12,8 @@ function save() {
 cd ../../tmp/backup
 
 tar -cvf $(date +%d-%Y-%m_%I-%M-%S).tar.gz ../archive/
+clear
+echo "La sauvegarde du dossier 'archive' viens d'être effectuée avec succés."
 }
 
 save

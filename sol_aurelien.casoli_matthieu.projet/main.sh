@@ -18,14 +18,21 @@ cd ./tmp/menu
 while [ "$done" != true ]; do
 #affichage du menu
 cat << EOF
-########################
-###MENU PRINCIPAL###
-1 - Télechargement de vidéo
-2 - Archivage de vidéo
-3 - Sauvegarde
-4 - Récapitulatif et stats
-5 - Quitter
-########################
+###############################
+######--YOUTUBE SELF_DL--######
+###############################
+#######-MENU PRINCIPAL-########
+1 - Télechargement de vidéo - #
+2 -    Archivage de vidéo   - #
+3 - 	   Sauvegarde	    - #
+4 -  Récapitulatif et stats - #
+5 - 	    Quitter    	    - #
+###############################
+##########-Made by-############
+#######-Sol Aurélien-##########
+############-and-##############
+#######-Casoli Matthieu-#######
+###############################
 EOF
 
 read userOption
@@ -33,11 +40,13 @@ read userOption
 case $userOption in
 	1)	../functions/download.sh
 		;;	 
-	2)	
+	2)	../functions/archive.sh
 		;;
 	3)	../functions/save.sh
 		;;	 
-	4) done="true"
+	4) 	
+		;;
+	5) done="true"
 		;;
 	*) 
 		;;
